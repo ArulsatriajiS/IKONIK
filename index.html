@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Layanan arsitek, kontraktor, renovasi, dan desain interior IKONIK di Kota Malang. Perencanaan terukur dengan RAB transparan.">
+  <title>IKONIK — Arsitek, Kontraktor & Interior Malang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('ikonik-theme');
+      if (savedTheme === 'dark' || (!savedTheme && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    } catch (error) {
+      console.warn('Tema tersimpan tidak dapat dibaca.', error);
+    }
+  </script>
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-[#0f1115] dark:text-slate-100">
+  <header class="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-300" data-header>
+    <nav class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Navigasi utama">
+      <a class="brand-lockup" href="./index.html" aria-label="IKONIK, beranda">
+        <img src="./assets/logo.jpg" alt="iKONiK. We Are The Future" class="brand-logo">
+        <span class="hidden text-xs font-semibold tracking-[0.18em] text-slate-500 sm:block dark:text-slate-400">ARSITEK · KONTRAKTOR · INTERIOR</span>
+      </a>
+      <div class="hidden items-center gap-7 lg:flex">
+        <a class="nav-link" href="./portofolio.html">Portofolio</a>
+        <a class="nav-link" href="./layanan.html">Layanan</a>
+        <a class="nav-link" href="#alur-kerja">Alur Kerja</a>
+          
+        <a class="nav-link" href="#garansi">Garansi</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Aktifkan mode gelap">
+          <i data-lucide="moon" class="h-[18px] w-[18px]"></i>
+        </button>
+        <a class="hidden rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-700 sm:inline-flex" href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi%20proyek." target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
+        <button class="icon-button lg:hidden" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu hidden border-t border-slate-200/70 bg-white/95 px-4 py-4 shadow-lg backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/95 lg:hidden">
+      <div class="mx-auto grid max-w-7xl gap-1">
+        <a href="./portofolio.html">Portofolio</a><a href="./layanan.html">Layanan</a>
+        <a href="#alur-kerja">Alur Kerja</a><a href="#garansi">Garansi</a>
+        <a class="mt-2 inline-flex items-center justify-center rounded-full bg-red-600 px-5 py-3 font-semibold text-white sm:hidden" href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi%20proyek." target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section relative flex min-h-[100svh] items-center overflow-hidden px-4 pb-14 pt-28 sm:px-6 lg:px-8">
+      <div class="hero-grid absolute inset-0" aria-hidden="true"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div class="relative z-10 py-8">
+          
+          <h1 class="mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.13] tracking-[-0.045em] text-slate-950 sm:text-5xl lg:text-[4.15rem] dark:text-white">Jasa Arsitek, Kontraktor & Interior Terukur di Malang</h1>
+          <p class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 dark:text-slate-300">Perencanaan gambar kerja 3D, pembangunan baru, renovasi, hingga custom furniture dengan RAB transparan dan bergaransi.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-700" href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi%20proyek." target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" class="h-4 w-4"></i>Konsultasi Gratis via WA</a>
+            <a class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/75 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-500 dark:border-slate-700 dark:bg-slate-900/70 dark:text-white" href="./portofolio.html">Lihat Portofolio Proyek<i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-slate-200 pt-5 text-xs font-medium tracking-wide text-slate-500 dark:border-slate-800 dark:text-slate-400">
+            <span class="inline-flex items-center gap-2"><i data-lucide="map-pin" class="h-4 w-4 text-red-600"></i>Kota Malang & sekitarnya</span>
+            <span class="inline-flex items-center gap-2"><i data-lucide="file-check-2" class="h-4 w-4 text-red-600"></i>RAB tertulis</span>
+            <span class="inline-flex items-center gap-2"><i data-lucide="badge-check" class="h-4 w-4 text-red-600"></i>Garansi pekerjaan</span>
+          </div>
+        </div>
+        <div class="hero-visual relative reveal is-visible">
+          <div class="hero-image-frame">
+            <img class="h-full w-full object-cover" src="./assets/604220478_18009163079818715_5759662721594436112_n.jpg" alt="Visual bangunan bertingkat modern dengan lanskap dan area hijau">
+          </div>
+          <div class="hero-note">
+            <span class="hero-note-mark">01</span>
+            <div><p class="text-sm font-semibold text-slate-900 dark:text-white">Perencanaan hingga serah terima</p><p class="mt-1 text-xs text-slate-500 dark:text-slate-400">Ruang, biaya, dan lingkup kerja dibahas sejak awal.</p></div>
+            <i data-lucide="move-up-right" class="ml-auto h-4 w-4 text-red-600"></i>
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span>IKONIK</span><span>WE ARE THE FUTURE</span></div>
+        </div>
+      </div>
+      <a class="hero-scroll absolute bottom-5 left-1/2 hidden -translate-x-1/2 items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-slate-500 sm:flex dark:text-slate-400" href="#portofolio"><span class="h-8 w-px bg-red-600"></span>Jelajahi proyek</a>
+    </section>
+
+    <section id="portofolio" class="section-shell bg-slate-50 dark:bg-[#12151b]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Pilihan pekerjaan</p><h2 class="section-title">Ruang yang dirancang untuk bekerja</h2></div>
+          <a class="text-link hidden sm:inline-flex" href="./portofolio.html">Lihat semua portofolio<i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+        </div>
+        <div class="mobile-carousel mt-9" data-carousel aria-label="Proyek pilihan">
+          <a class="project-card reveal" href="./portofolio.html">
+            <div class="project-image"><img src="./assets/604220478_18009163079818715_5759662721594436112_n.jpg" alt="Visualisasi fasad bangunan bertingkat modern" loading="lazy"><span class="project-index">01 / 05</span></div>
+            <div class="project-copy"><span>ARSITEKTUR · BANGUN BARU</span><h3>Bangunan bertingkat</h3><p>Perencanaan massa bangunan dan tata lanskap untuk lingkungan kampus.</p><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5"></i></div>
+          </a>
+          <a class="project-card reveal delay-1" href="./portofolio.html">
+            <div class="project-image"><img src="./assets/813931090_18044765006818715_9046093438245964099_n.jpg" alt="Area kerja Creative Corner dengan partisi kaca" loading="lazy"><span class="project-index">02 / 05</span></div>
+            <div class="project-copy"><span>INTERIOR · KOMERSIAL</span><h3>Creative Corner</h3><p>Penataan area kerja dengan partisi kaca dan bukaan cahaya alami.</p><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5"></i></div>
+          </a>
+          <a class="project-card reveal delay-2" href="./portofolio.html">
+            <div class="project-image"><img src="./assets/613136902_18011240540818715_8294618701982044167_n.jpg" alt="Bangunan komersial dengan fasad bata dan vegetasi" loading="lazy"><span class="project-index">03 / 05</span></div>
+            <div class="project-copy"><span>RENOVASI · FASAD</span><h3>Fasad bangunan komersial</h3><p>Pembaruan tampilan muka bangunan dengan material bertekstur.</p><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5"></i></div>
+          </a>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots aria-label="Pilih proyek"></div>
+        <a class="text-link mt-6 inline-flex sm:hidden" href="./portofolio.html">Lihat semua portofolio<i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+      </div>
+    </section>
+
+    <section id="layanan" class="section-shell bg-white dark:bg-[#0f1115]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="section-heading flex-col items-start gap-2 md:flex-row md:items-end md:justify-between reveal">
+          <div><p class="eyebrow">Satu tim, tiga disiplin</p><h2 class="section-title">Layanan Utama Kami</h2></div>
+          <p class="w-full max-w-md text-sm leading-6 text-slate-500 dark:text-slate-400">Lingkup, spesifikasi, jadwal, dan biaya disepakati sebelum pekerjaan berjalan.</p>
+        </div>
+        <div class="mobile-carousel mt-9" data-carousel aria-label="Layanan utama">
+          <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon"><i data-lucide="compass"></i></div><h3>Arsitek & gambar 3D</h3><p>Denah tata ruang, visualisasi 3D, dan gambar kerja teknis siap bangun.</p><a href="./layanan.html#arsitek" class="text-link">Rincian layanan<i data-lucide="arrow-right" class="h-4 w-4"></i></a></article>
+          <article class="service-card reveal delay-1"><span class="service-number">02</span><div class="service-icon"><i data-lucide="ruler"></i></div><h3>Kontraktor & renovasi</h3><p>Pembangunan rumah, ruko, dan gudang dengan lingkup serta material terukur.</p><a href="./layanan.html#kontraktor" class="text-link">Rincian layanan<i data-lucide="arrow-right" class="h-4 w-4"></i></a></article>
+          <article class="service-card reveal delay-2"><span class="service-number">03</span><div class="service-icon"><i data-lucide="armchair"></i></div><h3>Interior & furniture</h3><p>Kitchen set, wardrobe, panel, dan interior kantor sesuai ukuran ruang.</p><a href="./layanan.html#interior" class="text-link">Rincian layanan<i data-lucide="arrow-right" class="h-4 w-4"></i></a></article>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots aria-label="Pilih layanan"></div>
+        <a class="text-link mt-7 inline-flex" href="./layanan.html">Detail spesifikasi layanan<i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+      </div>
+    </section>
+
+    <section id="alur-kerja" class="section-shell bg-slate-50 dark:bg-[#12151b]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="max-w-2xl reveal"><p class="eyebrow">Cara kerja</p><h2 class="section-title">Empat tahap yang jelas</h2><p class="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-400">Setiap tahap memiliki keluaran dan persetujuan agar keputusan proyek tercatat.</p></div>
+        <div class="workflow-grid mt-10">
+          <article class="workflow-step reveal">
+            <div class="workflow-step-indicator lg:hidden">
+              <span class="workflow-step-number">1</span>
+              <span class="workflow-step-line"></span>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-heading">
+                <span class="workflow-desktop-number">01</span>
+                <span class="workflow-card-icon"><i data-lucide="messages-square"></i></span>
+                <h3>Survei & Konsultasi</h3>
+              </div>
+              <p>Cek kondisi lokasi, ukur luas ruangan, dan sesuaikan rencana dengan batas anggaran.</p>
+              <span class="workflow-card-output"><i data-lucide="check" aria-hidden="true"></i>Hasil: Catatan Kebutuhan & Estimasi Awal</span>
+            </div>
+          </article>
+          <article class="workflow-step reveal delay-1">
+            <div class="workflow-step-indicator lg:hidden">
+              <span class="workflow-step-number">2</span>
+              <span class="workflow-step-line"></span>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-heading">
+                <span class="workflow-desktop-number">02</span>
+                <span class="workflow-card-icon"><i data-lucide="drafting-compass"></i></span>
+                <h3>Desain 3D & Rincian RAB</h3>
+              </div>
+              <p>Pembuatan visualisasi 3D ruang serta rincian biaya material dan pekerjaan secara terbuka.</p>
+              <span class="workflow-card-output"><i data-lucide="check" aria-hidden="true"></i>Hasil: Gambar Kerja 3D & Dokumen RAB</span>
+            </div>
+          </article>
+          <article class="workflow-step reveal delay-2">
+            <div class="workflow-step-indicator lg:hidden">
+              <span class="workflow-step-number">3</span>
+              <span class="workflow-step-line"></span>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-heading">
+                <span class="workflow-desktop-number">03</span>
+                <span class="workflow-card-icon"><i data-lucide="clipboard-check"></i></span>
+                <h3>Kontrak & Pelaksanaan</h3>
+              </div>
+              <p>Pengerjaan lapangan sesuai jadwal yang disepakati dengan laporan progres foto/video berkala.</p>
+              <span class="workflow-card-output"><i data-lucide="check" aria-hidden="true"></i>Hasil: Laporan Progres Mingguan</span>
+            </div>
+          </article>
+          <article class="workflow-step reveal delay-3">
+            <div class="workflow-step-indicator lg:hidden">
+              <span class="workflow-step-number">4</span>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-heading">
+                <span class="workflow-desktop-number">04</span>
+                <span class="workflow-card-icon"><i data-lucide="key-round"></i></span>
+                <h3>Serah Terima & Garansi</h3>
+              </div>
+              <p>Pengecekan detail hasil akhir bersama klien sebelum serah terima kunci dan masa pemeliharaan.</p>
+              <span class="workflow-card-output"><i data-lucide="check" aria-hidden="true"></i>Hasil: Berita Acara & Garansi Pekerjaan</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+          
+
+    <section id="garansi" class="section-shell bg-slate-50 dark:bg-[#12151b]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="section-heading flex-col items-start gap-2 md:flex-row md:items-end md:justify-between reveal"><div><p class="eyebrow">Komitmen kerja</p><h2 class="section-title">Komitmen & Garansi Kerja</h2></div><p class="w-full max-w-md text-sm leading-6 text-slate-500 dark:text-slate-400">Kesepakatan yang terukur membantu menjaga hasil dan komunikasi selama proyek.</p></div>
+        <div class="mobile-carousel mt-9" data-carousel aria-label="Komitmen kerja">
+          <article class="commitment-card reveal"><span>01</span><i data-lucide="receipt-text"></i><h3>RAB yang terbuka</h3><p>Item pekerjaan dan spesifikasi material dijabarkan sebelum kontrak disetujui.</p></article>
+          <article class="commitment-card reveal delay-1"><span>02</span><i data-lucide="images"></i><h3>Progres terdokumentasi</h3><p>Dokumentasi pekerjaan dibagikan berkala sesuai jadwal proyek.</p></article>
+          <article class="commitment-card reveal delay-2"><span>03</span><i data-lucide="shield-check"></i><h3>Garansi tertulis</h3><p>Lingkup, masa berlaku, dan pengecualian garansi dijelaskan saat serah terima.</p></article>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots aria-label="Pilih komitmen"></div>
+      </div>
+    </section>
+
+    <section class="section-shell bg-white dark:bg-[#0f1115]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="section-heading reveal"><div><p class="eyebrow">Cerita pekerjaan</p><h2 class="section-title">Apa yang perlu diperiksa</h2></div><a class="text-link" href="https://www.google.com/maps/place/Interior+-+Kontraktor+-+Arsitek+%7C+IKONIK/@-7.9304822,112.6598277,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd629064213155d:0x79b6b92edd95adc4!8m2!3d-7.9304822!4d112.6598277!16s%2Fg%2F11tmsbbbdp?entry=ttu&amp;g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Baca ulasan di Google Maps<i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></div>
+        <p class="mt-4 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-400">Rating 5,0/5 dari 80 ulasan merupakan informasi yang diberikan pemilik bisnis. Buka Google Maps untuk membaca ulasan asli dan memeriksa konteksnya.</p>
+        <div class="mobile-carousel mt-8" data-carousel aria-label="Aspek layanan">
+          <article class="review-card reveal"><div class="review-topic">TOPIK ULASAN</div><h3>Ketepatan jadwal</h3><p>Diskusikan tahapan kerja, target waktu, dan cara tim mengabarkan perubahan jadwal.</p><span>DISKUSIKAN SAAT KONSULTASI</span></article>
+          <article class="review-card reveal delay-1"><div class="review-topic">TOPIK ULASAN</div><h3>Kerapian hasil interior</h3><p>Periksa foto hasil, detail sambungan, dan kecocokan material dengan spesifikasi.</p><span>DISKUSIKAN SAAT KONSULTASI</span></article>
+          <article class="review-card reveal delay-2"><div class="review-topic">TOPIK ULASAN</div><h3>Komunikasi tim</h3><p>Tanyakan kanal komunikasi, frekuensi laporan, dan penanggung jawab proyek.</p><span>DISKUSIKAN SAAT KONSULTASI</span></article>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots aria-label="Pilih aspek ulasan"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-[#111318] text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div><a class="brand-lockup" href="./index.html"><img src="./assets/logo.jpg" alt="iKONiK. We Are The Future" class="brand-logo"><span class="text-xs font-semibold tracking-[0.18em] text-slate-400">WE ARE THE FUTURE</span></a><p class="mt-5 max-w-sm text-sm leading-6 text-slate-400">IKONIK — studio arsitek, kontraktor bangunan, dan jasa desain interior di Kota Malang.</p><a class="footer-social mt-5" href="https://www.instagram.com/interior_kontraktor_arsitek/" target="_blank" rel="noopener noreferrer"><i data-lucide="camera" class="h-4 w-4"></i>@interior_kontraktor_arsitek</a></div>
+      <div><h2 class="footer-heading">Navigasi cepat</h2><div class="mt-5 grid gap-3 text-sm text-slate-400"><a href="./portofolio.html">Portofolio proyek</a><a href="./layanan.html">Detail layanan</a><a href="./index.html#alur-kerja">Alur kerja</a><a href="https://www.google.com/maps/place/Interior+-+Kontraktor+-+Arsitek+%7C+IKONIK/@-7.9304822,112.6598277,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd629064213155d:0x79b6b92edd95adc4!8m2!3d-7.9304822!4d112.6598277!16s%2Fg%2F11tmsbbbdp?entry=ttu&amp;g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Google Maps</a></div></div>
+      <div><h2 class="footer-heading">Kunjungi studio</h2><address class="mt-5 text-sm not-italic leading-6 text-slate-400">Jl. Tlk. Cendrawasih Gg. XIV No.12 A, RT.07/RW.03, Arjosari, Kec. Blimbing, Kota Malang, Jawa Timur 65126</address><p class="mt-3 text-sm text-slate-400">Senin – Minggu · 09.00–17.30 WIB</p><p class="mt-2 text-sm text-slate-400">WhatsApp <a href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener noreferrer" class="text-white">0812-1679-2901</a></p><div class="mt-5 flex flex-wrap gap-2"><a class="footer-map-button" href="https://www.google.com/maps/place/Interior+-+Kontraktor+-+Arsitek+%7C+IKONIK/@-7.9304822,112.6598277,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd629064213155d:0x79b6b92edd95adc4!8m2!3d-7.9304822!4d112.6598277!16s%2Fg%2F11tmsbbbdp?entry=ttu&amp;g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Buka di Google Maps<i data-lucide="arrow-up-right" class="h-4 w-4"></i></a><a class="footer-wa-button" href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener noreferrer">Konsultasi via WA</a></div></div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 border-t border-white/10 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><span>© <span data-current-year></span> IKONIK. Hak cipta dilindungi.</span><span>We Are The Future</span></div>
+  </footer>
+  <a class="floating-wa" href="https://wa.me/6281216792901?text=Halo%20IKONIK%2C%20saya%20ingin%20konsultasi%20proyek." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi melalui WhatsApp"><i data-lucide="message-circle" class="h-5 w-5"></i><span>Konsultasi</span></a>
+  <script src="./assets/site.js"></script>
+</body>
+</html>
